@@ -14,4 +14,6 @@ jobs:
       - name: Install Dependencies
         working-directory: 04-using-actions/react-app
         run: npm ci
+      - name: Run Test
+        run: npm run test
 
