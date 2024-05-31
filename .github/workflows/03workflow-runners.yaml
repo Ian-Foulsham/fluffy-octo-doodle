@@ -8,5 +8,12 @@ jobs:
         run: |
           echo "This job is running on an Ubuntu runner."
           echo $RUNNER_OS
-      
+  windows-echo:
+    runs-on: windows-latest
+    steps: 
+      - name: Show OS
+        shell: bash
+        run: |
+          echo "This job is running on a Windows runner with Bash."
+          echo $RUNNER_OS
 
